@@ -1,12 +1,10 @@
-import Chars from "../data/characterData.json"
-
 
 function Character(props) {
 
     return (
 <div data-test="component-character">
 <h1 data-test='char-name'>{props.name}</h1>
-<img alt={props.alt} src={props.image} data-test='char-img'></img>                
+<img alt={props.alt} src={props.imgUrl} data-test='char-img'></img>                
 <ul data-test='char-list'>
     <li data-test='char-birth'>{"Date of Birth: " + props.birth}</li>
     <li data-test='char-death'>{"Date of Death: " + props.death}</li>
